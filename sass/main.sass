@@ -1,0 +1,265 @@
+@import "bourbon"
+@import reset
+
++font-face("RockoUltraFLF", "../fonts/RockoUltraFLF/RockoUltraFLF", normal, $file-formats: eot woff ttf svg)
+
+body
+	font: em(12px) Verdana
+	line-height: em(26px)
+	background: url(../img/body_bg.jpg) no-repeat
+	background-size: 100%
+	color: #676767
+
+.wrapper
+	max-width: 950px
+	margin: 0 auto
+
+header
+	padding: 25px 0 15px 0
+	overflow: hidden
+	.logo
+		color: #083d69
+		width: 202px
+		text-align: right
+		float: left
+		.logo__main
+			text-align: left
+
+			a
+				font-family: "RockoUltraFLF"
+				font-size: em(28px)
+				color: #fff
+				text-decoration: none
+			span
+				color: #083d69
+
+	.header__phones
+		display: inline-block
+		color: #fff
+		font-size: em(20px)
+		float: right
+		margin-top: 7px
+
+.menu-wrap
+	overflow: hidden
+	padding-top: 11px
+	background: url(../img/menu_wrap_bg.png) no-repeat
+	background-size: 100%
+	background-position: 3.5px 0
+	position: relative
+	z-index: 1
+
+
+	.menu
+		width: 63.16%
+		float: right
+		text-align: right
+		padding: 9px 8px 25px 0
+		
+		li
+			display: inline-block
+
+			a
+				text-decoration: none
+				color: #fff
+				font-size: 1.15em
+				padding: 10px 10px
+
+.slider-wrap
+	clear: both
+	background: url(../img/slider-wrap_bg.png) no-repeat
+	background-size: 100.8%
+	color: #fff
+	margin-top: -57px
+	padding: 95px 0 75px 67px
+	overflow: hidden
+
+	.slide__title
+		font-family: "RockoUltraFLF"
+		font-size: em(48px)
+		margin-bottom: 20px
+		padding-top: 10px
+
+	.slider__title2
+		font-family: "RockoUltraFLF"
+		font-size: em(30px)
+		margin-left: 180px
+		margin-bottom: 45px
+
+	.slide__text
+		max-width: 650px
+		line-height: em(28px)
+		margin-bottom: 50px
+		
+	.more-wrap
+		max-width: 650px
+		text-align: right
+		position: relative
+
+		.more
+			color: #fff
+			text-decoration: none
+			text-align: right
+		
+		&:before
+			content: ""
+			position: absolute
+			width: 4px
+			height: 6px
+			top: 8px
+			right: 116px
+			background: url(../img/arrow.png) no-repeat
+
+.contact-button
+	color: #fff
+	text-decoration: none
+	background: url(../img/contact-button.png) no-repeat
+	background-size: 100%
+	padding: 18px 20px
+	font-size: em(19px)
+
+.contact-us
+	font-size: em(20px)
+	margin-bottom: 40px
+
+	span
+		margin-left: 15px
+		margin-top: 15px
+
+.about-us
+	display: flex
+	justify-content: space-between
+	margin-bottom: 60px
+	
+
+	.about-us__block
+		width: 31.57%
+		box-sizing: border-box
+		padding: 20px 25px 0 25px
+		background: url(../img/block_bg.png) no-repeat
+		background-size: 100%
+		font-size: 11px
+
+		h4	
+			font-size: em(24px)
+
+			span
+				color: #0d5b9b
+
+		.about-us__title-desc
+			color: #b3b4b4
+			font-size: em(18px)
+			margin-bottom: 30px
+			display: block
+
+		.about-ua__p
+			margin-bottom: 35px
+
+		ul
+
+			li
+				margin-bottom: 18px
+				position: relative
+				padding-left: 25px
+
+				&:last-child
+					margin-bottom: 0
+
+				&:before
+					content: ""
+					position: absolute
+					background: url(../img/about_us_item_before.png) no-repeat
+					width: 9px
+					height: 9px
+					top: 7px
+					left: 0
+
+		.quate
+			position: relative
+			padding: 40px 0 35px 0
+
+			&:before
+				content: ""
+				position: absolute
+				background: url(../img/quate_top.png) no-repeat
+				width: 29px
+				height: 21px
+				top: 0
+				left: 0
+
+			&:after
+				content: ""
+				position: absolute
+				background: url(../img/quate_buttom.png) no-repeat
+				width: 29px
+				height: 21px
+				bottom: -60px
+				right: 0
+
+		.quate-auther
+			color: #45c9f5
+			text-align: right
+
+.bunners
+	margin-bottom: 40px
+
+	ul
+
+		display: flex
+		justify-content: space-between
+
+		li
+			width: 23.68%
+
+			img
+				width: 100%
+
+footer
+	background: url(../img/footer_bg.png) no-repeat
+	background-size: 100%
+	height: 97px
+	max-width: 950px
+
+	.footer__phone
+		font-size: em(18px)
+		margin-left: 180px
+
+		span
+			color: #1c65a1
+	
+	.footer__social
+		margin-top: -7px
+		padding-left: 15px
+		li
+			float: left
+			width: 28px
+			height: 28px
+			border-radius: 2px
+		
+			a
+				display: block
+				background: url(../img/social_sprite.png) no-repeat center
+				width: 100%
+				height: 100%
+
+			.footer__lk
+				background-position: -84px 0
+
+			.footer__rd
+				background-position: -28px 0
+
+			.footer__tw
+				background-position: -56px 0
+
+			.footer__fb
+				background-position: 0 0
+
+
+.footer__coperite
+	clear: both
+	color: #fff
+	text-align: center
+
+.footer__designed
+	color: #45c9f5
+	text-align: center
